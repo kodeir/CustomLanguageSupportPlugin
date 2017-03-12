@@ -1,18 +1,18 @@
 {
-  parserClass="com.simpleplugin.parser.SimpleParser"
+  parserClass="com.kodeir.plugin.cls.parser.SimpleParser"
 
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
 
   psiClassPrefix="Simple"
   psiImplClassSuffix="Impl"
-  psiPackage="com.simpleplugin.psi"
-  psiImplPackage="com.simpleplugin.psi.impl"
+  psiPackage="com.kodeir.plugin.cls.psi"
+  psiImplPackage="com.kodeir.plugin.cls.psi.impl"
 
-  elementTypeHolderClass="com.simpleplugin.psi.SimpleTypes"
-  elementTypeClass="com.simpleplugin.psi.SimpleElementType"
-  tokenTypeClass="com.simpleplugin.psi.SimpleTokenType"
+  elementTypeHolderClass="com.kodeir.plugin.cls.psi.SimpleTypes"
+  elementTypeClass="com.kodeir.plugin.cls.psi.SimpleElementType"
+  tokenTypeClass="com.kodeir.plugin.cls.psi.SimpleTokenType"
 
-  psiImplUtilClass="com.simpleplugin.psi.impl.SimplePsiImplUtil"
+  psiImplUtilClass="com.kodeir.plugin.cls.psi.impl.SimplePsiImplUtil"
 }
 
 simpleFile ::= (property|COMMENT)*
@@ -20,8 +20,8 @@ simpleFile ::= (property|COMMENT)*
 property ::= (KEY SEPARATOR VALUE?)|KEY {
     pin=3
     recoverWhile="recover_property"
-    mixin="com.simpleplugin.psi.impl.SimpleNamedElementImpl"
-    implements="com.simpleplugin.psi.SimpleNamedElement"
+    mixin="com.kodeir.plugin.cls.psi.impl.SimpleNamedElementImpl"
+    implements="com.kodeir.plugin.cls.psi.SimpleNamedElement"
     methods=[getKey getValue getName setName getNameIdentifier getPresentation]
 }
 
