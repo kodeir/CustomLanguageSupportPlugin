@@ -1,4 +1,4 @@
-package com.simpleplugin;
+package com.kodeir.plugin.cls;
 
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
