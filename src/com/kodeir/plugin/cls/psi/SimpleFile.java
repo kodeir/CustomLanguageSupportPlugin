@@ -1,8 +1,10 @@
-package com.kodeir.plugin.cls;
+package com.kodeir.plugin.cls.psi;
 
 import com.intellij.extapi.psi.PsiFileBase;
 import com.intellij.openapi.fileTypes.FileType;
 import com.intellij.psi.FileViewProvider;
+import com.kodeir.plugin.cls.SimpleFileType;
+import com.kodeir.plugin.cls.SimpleLanguage;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
