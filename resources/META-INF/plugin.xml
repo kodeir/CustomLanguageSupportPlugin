@@ -26,6 +26,7 @@
     <fileTypeFactory implementation="com.kodeir.plugin.cls.SimpleFileTypeFactory"/>
     <lang.parserDefinition language="Simple" implementationClass="com.kodeir.plugin.cls.SimpleParserDefinition"/>
     <lang.syntaxHighlighterFactory key="Simple" implementationClass="com.kodeir.plugin.cls.SimpleSyntaxHighlighterFactory"/>
+    <colorSettingsPage implementation="com.kodeir.plugin.cls.SimpleColorSettingsPage"/>
   </extensions>
 
   <actions>
