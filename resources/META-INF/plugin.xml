@@ -24,6 +24,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <fileTypeFactory implementation="com.kodeir.plugin.cls.SimpleFileTypeFactory"/>
+    <lang.parserDefinition language="Simple" implementationClass="com.kodeir.plugin.cls.SimpleParserDefinition"/>
   </extensions>
 
   <actions>
