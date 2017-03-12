@@ -12,10 +12,12 @@
   elementTypeClass="com.kodeir.plugin.cls.psi.SimpleElementType"
   tokenTypeClass="com.kodeir.plugin.cls.psi.SimpleTokenType"
 
-  psiImplUtilClass="com.kodeir.plugin.cls.psi.impl.SimplePsiImplUtil"
+  /*psiImplUtilClass="com.kodeir.plugin.cls.psi.impl.SimplePsiImplUtil"*/
 }
 
+/*
 simpleFile ::= (property|COMMENT)*
+
 
 property ::= (KEY SEPARATOR VALUE?)|KEY {
     pin=3
@@ -24,5 +26,11 @@ property ::= (KEY SEPARATOR VALUE?)|KEY {
     implements="com.kodeir.plugin.cls.psi.SimpleNamedElement"
     methods=[getKey getValue getName setName getNameIdentifier getPresentation]
 }
+ */
 
-private recover_property ::= !(KEY|SEPARATOR|COMMENT)
+simpleFile ::= item_*
+
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
