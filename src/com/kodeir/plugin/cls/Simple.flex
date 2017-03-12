@@ -2,7 +2,7 @@ package com.kodeir.plugin.cls;
 
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
-import com.simpleplugin.psi.SimpleTypes;
+import com.kodeir.plugin.cls.psi.SimpleTypes;
 import com.intellij.psi.TokenType;
 
 %%
