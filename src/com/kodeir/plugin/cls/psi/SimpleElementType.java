@@ -1,6 +1,7 @@
-package com.kodeir.plugin.cls;
+package com.kodeir.plugin.cls.psi;
 
 import com.intellij.psi.tree.IElementType;
+import com.kodeir.plugin.cls.SimpleLanguage;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
